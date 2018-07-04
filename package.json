@@ -1,0 +1,12 @@
+{
+  "name": "super-require",
+  "version": "0.0.1",
+  "description": "require commonjs module from string or file",
+  "main": "index.js",
+  "repository": "https://github.com/elixiao/super-require",
+  "author": "elixiao-mac <elixiao@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "require-from-string": "^2.0.2"
+  }
+}
