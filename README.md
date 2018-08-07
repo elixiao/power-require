@@ -1,7 +1,7 @@
-# super-require
+# power-require
 
 ```js
-const superRequire = require('super-require')
+const superRequire = require('power-require')
 const a = superRequire.fromFile('path/to/file','whatever/node/module/path/you/want')
 ```
 
