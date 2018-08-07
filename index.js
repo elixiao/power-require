@@ -60,12 +60,8 @@ ${deepLoad}\n`
   return header + src
 }
 
-function fromString(code, filename, options) {
-  return requireFromString(code, filename, options)
-}
 
 module.exports = {
-  fromFile,
-  fromString
+  fromFile
 }
 
