@@ -46,9 +46,9 @@ function deepLoad(src, folder, dirname = folder) {
       structs.push([filename, '.js'].join(''))
     }
     // absolute file path (handle separator on windows)
-    const absoluteFile = lxPath.resolve(folder, ...structs).replace(/\\/g, '\\\\')
+    const absoluteFile = lxPath.resolve(folder, ...structs).replace(/\\/g, '/')
       , absoluteDir = lxPath.dirname(absoluteFile)
-      , relativeFile = lxPath.join(dirname, relativePath)
+      , relativeFile = lxPath.join(dirname, relativePath).replace(/\\/g, '/')
     src = src.replace(regex, `requireFromString(deepLoad(lxFs.readFileSync('${absoluteFile}', 'utf8'),'${absoluteDir}','${relativeFile}'),'${relativeFile}'`)
     match = regex.exec(src)
   }
